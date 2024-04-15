@@ -1218,6 +1218,33 @@
           "cssFilePath": "plasmic/proliga_test_app/PlasmicIdealTeamMember.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "iFQsXPuWlxKP",
+          "name": "BreakinNewsCards",
+          "type": "managed",
+          "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
+          "renderModuleFilePath": "plasmic/proliga_test_app/PlasmicBreakinNewsCards.tsx",
+          "importSpec": {
+            "modulePath": "BreakinNewsCards.tsx"
+          },
+          "cssFilePath": "plasmic/proliga_test_app/PlasmicBreakinNewsCards.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "Tqk74FgapoaH",
+          "name": "BreakinNews",
+          "type": "managed",
+          "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
+          "renderModuleFilePath": "plasmic/proliga_test_app/PlasmicBreakinNews.tsx",
+          "importSpec": {
+            "modulePath": "../pages/breakin-news.tsx"
+          },
+          "cssFilePath": "plasmic/proliga_test_app/PlasmicBreakinNews.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/breakin-news"
         }
       ],
       "icons": [
@@ -1387,6 +1414,11 @@
           "id": "SWRXFPsU4YsB",
           "name": "Willian Jose.png",
           "filePath": "../public/plasmic/proliga_test_app/images/willianJosepng.png"
+        },
+        {
+          "id": "pmdywa1lYqhV",
+          "name": "Cros.webp",
+          "filePath": "../public/plasmic/proliga_test_app/images/croswebp.webp"
         }
       ],
       "indirect": false,
