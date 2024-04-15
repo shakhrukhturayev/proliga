@@ -60,8 +60,6 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import Button from "../../Button"; // plasmic-import: j5o5xPWcHXxc/component
-import { GraphCMSFetcher } from "@plasmicpkgs/plasmic-graphcms";
-import { GraphCMSField } from "@plasmicpkgs/plasmic-graphcms";
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
 import { useScreenVariants as useScreenVariantsdXwyGmjSdG } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -d_XWYGmjSdG/globalVariant
@@ -91,8 +89,6 @@ export type PlasmicSignInButtons__OverridesType = {
   root?: Flex__<"div">;
   h6?: Flex__<"h6">;
   link?: Flex__<"a"> & Partial<LinkProps>;
-  hygraphFetcher?: Flex__<typeof GraphCMSFetcher>;
-  hygraphField?: Flex__<typeof GraphCMSField>;
 };
 
 export interface DefaultSignInButtonsProps {
@@ -279,66 +275,14 @@ function PlasmicSignInButtons__RenderFunc(props: {
           </PlasmicLink__>
         </Stack__>
       </div>
-      <div className={classNames(projectcss.all, sty.freeBox___3Yq5R)}>
-        <Stack__
-          as={"div"}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__pB640)}
-        >
-          <GraphCMSFetcher
-            data-plasmic-name={"hygraphFetcher"}
-            data-plasmic-override={overrides.hygraphFetcher}
-            className={classNames("__wab_instance", sty.hygraphFetcher)}
-            noAutoRepeat={false}
-            noLayout={false}
-            query={(() => {
-              try {
-                return undefined;
-              } catch (e) {
-                if (
-                  e instanceof TypeError ||
-                  e?.plasmicType === "PlasmicUndefinedDataError"
-                ) {
-                  return undefined;
-                }
-                throw e;
-              }
-            })()}
-            varOverrides={{}}
-          >
-            <DataCtxReader__>
-              {$ctx => (
-                <div className={classNames(projectcss.all, sty.freeBox__w3Mg)}>
-                  <GraphCMSField
-                    data-plasmic-name={"hygraphField"}
-                    data-plasmic-override={overrides.hygraphField}
-                    className={classNames("__wab_instance", sty.hygraphField)}
-                    themeClassName={classNames(
-                      projectcss.root_reset,
-                      projectcss.root_reset_tags,
-                      projectcss.plasmic_default_styles,
-                      projectcss.plasmic_mixins,
-                      projectcss.plasmic_tokens,
-                      plasmic_antd_5_hostless_css.plasmic_tokens,
-                      plasmic_plasmic_rich_components_css.plasmic_tokens
-                    )}
-                  />
-                </div>
-              )}
-            </DataCtxReader__>
-          </GraphCMSFetcher>
-        </Stack__>
-      </div>
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h6", "link", "hygraphFetcher", "hygraphField"],
+  root: ["root", "h6", "link"],
   h6: ["h6"],
-  link: ["link"],
-  hygraphFetcher: ["hygraphFetcher", "hygraphField"],
-  hygraphField: ["hygraphField"]
+  link: ["link"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -347,8 +291,6 @@ type NodeDefaultElementType = {
   root: "div";
   h6: "h6";
   link: "a";
-  hygraphFetcher: typeof GraphCMSFetcher;
-  hygraphField: typeof GraphCMSField;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -413,8 +355,6 @@ export const PlasmicSignInButtons = Object.assign(
     // Helper components rendering sub-elements
     h6: makeNodeComponent("h6"),
     link: makeNodeComponent("link"),
-    hygraphFetcher: makeNodeComponent("hygraphFetcher"),
-    hygraphField: makeNodeComponent("hygraphField"),
 
     // Metadata about props expected for PlasmicSignInButtons
     internalVariantProps: PlasmicSignInButtons__VariantProps,

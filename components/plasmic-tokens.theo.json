@@ -2079,6 +2079,16 @@
         "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
         "id": "sD_lxm9xiWSg"
       }
+    },
+    {
+      "name": "member-back-yellow",
+      "type": "color",
+      "value": "#F8B034",
+      "category": "color",
+      "meta": {
+        "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
+        "id": "yTaDKUg1kC9a"
+      }
     }
   ],
   "global": {

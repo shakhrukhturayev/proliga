@@ -1178,6 +1178,46 @@
           "cssFilePath": "plasmic/proliga_test_app/PlasmicFooter.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "uS-s5NCMFolB",
+          "name": "Matches",
+          "type": "managed",
+          "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
+          "renderModuleFilePath": "plasmic/proliga_test_app/PlasmicMatches.tsx",
+          "importSpec": {
+            "modulePath": "../pages/matches.tsx"
+          },
+          "cssFilePath": "plasmic/proliga_test_app/PlasmicMatches.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/matches"
+        },
+        {
+          "id": "9JecvK77shao",
+          "name": "SoccerPlaceMens",
+          "type": "managed",
+          "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
+          "renderModuleFilePath": "plasmic/proliga_test_app/PlasmicSoccerPlaceMens.tsx",
+          "importSpec": {
+            "modulePath": "SoccerPlaceMens.tsx"
+          },
+          "cssFilePath": "plasmic/proliga_test_app/PlasmicSoccerPlaceMens.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "mXqSFIZO8qjj",
+          "name": "IdealTeamMember",
+          "type": "managed",
+          "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
+          "renderModuleFilePath": "plasmic/proliga_test_app/PlasmicIdealTeamMember.tsx",
+          "importSpec": {
+            "modulePath": "IdealTeamMember.tsx"
+          },
+          "cssFilePath": "plasmic/proliga_test_app/PlasmicIdealTeamMember.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1287,6 +1327,66 @@
           "id": "HbetoN8j61_s",
           "name": "x-social-media-white-icon.png",
           "filePath": "../public/plasmic/proliga_test_app/images/xSocialMediaWhiteIconpng.png"
+        },
+        {
+          "id": "NYxI8wwcypqv",
+          "name": "soccer place.jpg",
+          "filePath": "../public/plasmic/proliga_test_app/images/soccerPlacejpg.jpg"
+        },
+        {
+          "id": "nPLE-rjgyRyN",
+          "name": "Sergio Her.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/sergioHerpng.png"
+        },
+        {
+          "id": "zOY4nGKWY52k",
+          "name": "Dovbyk.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/dovbykpng.png"
+        },
+        {
+          "id": "OYMOA33sSeic",
+          "name": "Ramos.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/ramospng.png"
+        },
+        {
+          "id": "5t0ryR-AGm0q",
+          "name": "John pache.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/johnPachepng.png"
+        },
+        {
+          "id": "wy4isCQ6lmGF",
+          "name": "Migueza.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/miguezapng.png"
+        },
+        {
+          "id": "NqlAHGpHmALr",
+          "name": "Zahkaryan.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/zahkaryanpng.png"
+        },
+        {
+          "id": "3l_D4eB1C8cM",
+          "name": "Iker munofiz.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/ikerMunofizpng.png"
+        },
+        {
+          "id": "Hz9XSPdyPGcW",
+          "name": "Robert nav.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/robertNavpng.png"
+        },
+        {
+          "id": "sg9ZJNJFdIXS",
+          "name": "Alcaraz.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/alcarazpng.png"
+        },
+        {
+          "id": "hko0WAU8Xzff",
+          "name": "Rodrygo.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/rodrygopng.png"
+        },
+        {
+          "id": "SWRXFPsU4YsB",
+          "name": "Willian Jose.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/willianJosepng.png"
         }
       ],
       "indirect": false,

@@ -25,12 +25,12 @@
 .login > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 8px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .login {
     border-color: var(--token-iY-G3zIs-ZCD);
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .login > :global(.__wab_flex-container) {
     justify-content: center;
     align-items: center;

@@ -220,19 +220,23 @@ function PlasmicNavbar__RenderFunc(props: {
               href={`/rankings`}
               platform={"nextjs"}
             >
-              {(() => {
-                try {
-                  return true;
-                } catch (e) {
-                  if (
-                    e instanceof TypeError ||
-                    e?.plasmicType === "PlasmicUndefinedDataError"
-                  ) {
-                    return true;
-                  }
-                  throw e;
-                }
-              })() ? (
+              {(
+                hasVariant(globalVariants, "screen", "portrait")
+                  ? true
+                  : (() => {
+                      try {
+                        return true;
+                      } catch (e) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
+                          return true;
+                        }
+                        throw e;
+                      }
+                    })()
+              ) ? (
                 <Button
                   className={classNames("__wab_instance", sty.button__qTcOs)}
                   endIcon={
@@ -268,6 +272,7 @@ function PlasmicNavbar__RenderFunc(props: {
                 sty.link__hlPzz
               )}
               component={Link}
+              href={`/matches`}
               platform={"nextjs"}
             >
               <Button

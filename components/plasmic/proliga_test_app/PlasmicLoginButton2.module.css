@@ -16,7 +16,7 @@
   height: auto;
   color: #ff4844;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .text {
     font-size: 12px;
   }

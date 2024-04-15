@@ -9,6 +9,8 @@
   --plasmic-token-facebook: var(--token-kr7h-FgyE6wN);
   --token-deUOqHKwNHwK: #11111f;
   --plasmic-token-footer-back: var(--token-deUOqHKwNHwK);
+  --token-yTaDKUg1kC9a: #f8b034;
+  --plasmic-token-member-back-yellow: var(--token-yTaDKUg1kC9a);
 }
 
 .plasmic_tokens {

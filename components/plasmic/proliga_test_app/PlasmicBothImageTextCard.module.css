@@ -94,7 +94,7 @@
 .columns > :global(.__wab_flex-container) > :nth-child(2n + 2) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .columns {
     width: 100%;
     height: auto;
@@ -102,14 +102,14 @@
     min-width: 0;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .columns > :global(.__wab_flex-container) {
     flex-direction: row;
     flex-wrap: wrap;
     min-width: 0;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .columns > :global(.__wab_flex-container) > :nth-child(1n + 1) {
     width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
   }

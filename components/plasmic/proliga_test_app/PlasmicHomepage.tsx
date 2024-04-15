@@ -582,6 +582,12 @@ function PlasmicHomepage__RenderFunc(props: {
                             displayWidth={
                               hasVariant(globalVariants, "screen", "mobileOnly")
                                 ? "180px"
+                                : hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "portrait"
+                                  )
+                                ? "100%"
                                 : "200px"
                             }
                             src={

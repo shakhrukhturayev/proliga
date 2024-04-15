@@ -9,7 +9,7 @@
   background: #ffffff;
   min-width: 0;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .root {
     width: auto;
     justify-self: flex-start;
@@ -30,7 +30,7 @@
   margin-right: 0px;
   padding: 8px 0px 8px 8px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .freeBox__vsB {
     background: #222333;
   }
@@ -56,7 +56,7 @@
   background: #232433;
   padding: 8px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .freeBox__ugVra {
     background: #222333;
   }
@@ -73,7 +73,7 @@
   margin-right: 100px;
   padding: 8px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .freeBox__zk46L {
     margin-right: 20px;
   }
@@ -86,7 +86,7 @@
   flex-shrink: 0;
   border-radius: 50%;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .cmsEntryField__rHivb:global(.__wab_instance) {
     width: 45px;
     height: 45px;
@@ -112,7 +112,7 @@
   font-weight: 700;
   color: #ffffff;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .cmsEntryField__vCfNe:global(.__wab_instance) {
     font-size: 18px;
   }
@@ -124,7 +124,7 @@
   font-weight: 200;
   color: #ffffff;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .cmsEntryField___3L6Ur:global(.__wab_instance) {
     font-size: 16px;
   }
@@ -144,7 +144,7 @@
   flex-shrink: 0;
   border-radius: 50%;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .cmsEntryField___6QMxP:global(.__wab_instance) {
     font-size: 18px;
   }
@@ -162,7 +162,7 @@
   flex-shrink: 0;
   border-radius: 50%;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 568px) {
   .cmsEntryField__nvi8S:global(.__wab_instance) {
     font-size: 18px;
   }
