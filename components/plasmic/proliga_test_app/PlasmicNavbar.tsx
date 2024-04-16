@@ -443,6 +443,7 @@ function PlasmicNavbar__RenderFunc(props: {
                 sty.link___0HvVq
               )}
               component={Link}
+              href={`/ideal-xl`}
               platform={"nextjs"}
             >
               <Button
@@ -479,6 +480,7 @@ function PlasmicNavbar__RenderFunc(props: {
                 sty.link__gdIOv
               )}
               component={Link}
+              href={`/absences`}
               platform={"nextjs"}
             >
               <Button
