@@ -67,6 +67,7 @@ import { CmsQueryRepeater } from "@plasmicpkgs/plasmic-cms";
 import { CmsRowImage } from "@plasmicpkgs/plasmic-cms";
 import { CmsRowField } from "@plasmicpkgs/plasmic-cms";
 import MatchesCalendar from "../../MatchesCalendar"; // plasmic-import: FvqZ6jZ3Nmz6/component
+import SoccerPlaceMens from "../../SoccerPlaceMens"; // plasmic-import: 9JecvK77shao/component
 import Footer from "../../Footer"; // plasmic-import: cx6aWNqCuwPL/component
 
 import { useScreenVariants as useScreenVariantsdXwyGmjSdG } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -d_XWYGmjSdG/globalVariant
@@ -103,7 +104,7 @@ export type PlasmicHomepage__OverridesType = {
   breakingNewsSection?: Flex__<"div">;
   news?: Flex__<"div">;
   matchesCalendar?: Flex__<typeof MatchesCalendar>;
-  columns?: Flex__<"div">;
+  soccerPlaceMens?: Flex__<typeof SoccerPlaceMens>;
   footer?: Flex__<typeof Footer>;
 };
 
@@ -675,11 +676,7 @@ function PlasmicHomepage__RenderFunc(props: {
               />
             </Stack__>
           </div>
-          <div
-            data-plasmic-name={"columns"}
-            data-plasmic-override={overrides.columns}
-            className={classNames(projectcss.all, sty.columns)}
-          >
+          <div className={classNames(projectcss.all, sty.columns__iiEzS)}>
             <div className={classNames(projectcss.all, sty.column__yPNc3)}>
               <PlasmicLink__
                 className={classNames(
@@ -731,6 +728,86 @@ function PlasmicHomepage__RenderFunc(props: {
               {"Fantasy"}
             </div>
           </div>
+          <div className={classNames(projectcss.all, sty.columns__cLvmm)}>
+            <div className={classNames(projectcss.all, sty.column__nlhH)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__rZtUi
+                )}
+              >
+                {"Most Ideal team Fixture 30"}
+              </div>
+              <SoccerPlaceMens
+                data-plasmic-name={"soccerPlaceMens"}
+                data-plasmic-override={overrides.soccerPlaceMens}
+                className={classNames("__wab_instance", sty.soccerPlaceMens)}
+              />
+            </div>
+            <div className={classNames(projectcss.all, sty.column__ewIvw)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___6XkX
+                )}
+              >
+                {"In-Form Players"}
+              </div>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__yMkoz)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/proliga_test_app/images/emptyStateNoResultswebp.webp",
+                  fullWidth: 145,
+                  fullHeight: 110,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__vqsKa
+                )}
+              >
+                {"no data"}
+              </div>
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link___1WWpK
+                )}
+                component={Link}
+                href={"https://www.plasmic.app/"}
+                platform={"nextjs"}
+              >
+                {"Show players"}
+              </PlasmicLink__>
+            </div>
+            <div className={classNames(projectcss.all, sty.column__mUoX4)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__yfxaA
+                )}
+              >
+                {"Market"}
+              </div>
+            </div>
+          </div>
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -757,7 +834,7 @@ const PlasmicDescendants = {
     "breakingNewsSection",
     "news",
     "matchesCalendar",
-    "columns",
+    "soccerPlaceMens",
     "footer"
   ],
   navbar: ["navbar"],
@@ -772,7 +849,7 @@ const PlasmicDescendants = {
   breakingNewsSection: ["breakingNewsSection", "news", "matchesCalendar"],
   news: ["news"],
   matchesCalendar: ["matchesCalendar"],
-  columns: ["columns"],
+  soccerPlaceMens: ["soccerPlaceMens"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -792,7 +869,7 @@ type NodeDefaultElementType = {
   breakingNewsSection: "div";
   news: "div";
   matchesCalendar: typeof MatchesCalendar;
-  columns: "div";
+  soccerPlaceMens: typeof SoccerPlaceMens;
   footer: typeof Footer;
 };
 
@@ -868,7 +945,7 @@ export const PlasmicHomepage = Object.assign(
     breakingNewsSection: makeNodeComponent("breakingNewsSection"),
     news: makeNodeComponent("news"),
     matchesCalendar: makeNodeComponent("matchesCalendar"),
-    columns: makeNodeComponent("columns"),
+    soccerPlaceMens: makeNodeComponent("soccerPlaceMens"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHomepage

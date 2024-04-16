@@ -26,9 +26,6 @@
   margin-top: 16px;
 }
 .columns {
-  --plsmc-rc-col-gap: 0px;
-}
-.columns {
   display: flex;
   position: relative;
   width: 100%;
@@ -40,6 +37,7 @@
   flex-wrap: nowrap;
   background: var(--token-deUOqHKwNHwK);
   min-width: 0;
+  --plsmc-rc-col-gap: 0px;
   padding: 8px;
 }
 .columns > :nth-child(3n + 1) {

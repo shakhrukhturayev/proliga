@@ -1239,7 +1239,7 @@
           "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
           "renderModuleFilePath": "plasmic/proliga_test_app/PlasmicBreakinNews.tsx",
           "importSpec": {
-            "modulePath": "../pages/breakin-news.tsx"
+            "modulePath": "../pages/breaking-news.tsx"
           },
           "cssFilePath": "plasmic/proliga_test_app/PlasmicBreakinNews.module.css",
           "scheme": "blackbox",
@@ -1419,6 +1419,21 @@
           "id": "pmdywa1lYqhV",
           "name": "Cros.webp",
           "filePath": "../public/plasmic/proliga_test_app/images/croswebp.webp"
+        },
+        {
+          "id": "m8LZG5WIl6AN",
+          "name": "Athletico madrid.webp",
+          "filePath": "../public/plasmic/proliga_test_app/images/athleticoMadridwebp.webp"
+        },
+        {
+          "id": "4uMihCn5v3QP",
+          "name": "Cimy Amela.webp",
+          "filePath": "../public/plasmic/proliga_test_app/images/cimyAmelawebp.webp"
+        },
+        {
+          "id": "zmWUMb3n1VE5",
+          "name": "Rm team.webp",
+          "filePath": "../public/plasmic/proliga_test_app/images/rmTeamwebp.webp"
         }
       ],
       "indirect": false,

@@ -68,11 +68,22 @@ import sty from "./PlasmicBreakinNewsCards.module.css"; // plasmic-import: iFQsX
 
 createPlasmicElementProxy;
 
-export type PlasmicBreakinNewsCards__VariantMembers = {};
-export type PlasmicBreakinNewsCards__VariantsArgs = {};
+export type PlasmicBreakinNewsCards__VariantMembers = {
+  variant2: "variant2";
+  variant3: "variant3";
+  rmTeam: "rmTeam";
+};
+export type PlasmicBreakinNewsCards__VariantsArgs = {
+  variant2?: SingleBooleanChoiceArg<"variant2">;
+  variant3?: SingleBooleanChoiceArg<"variant3">;
+  rmTeam?: SingleBooleanChoiceArg<"rmTeam">;
+};
 type VariantPropType = keyof PlasmicBreakinNewsCards__VariantsArgs;
-export const PlasmicBreakinNewsCards__VariantProps =
-  new Array<VariantPropType>();
+export const PlasmicBreakinNewsCards__VariantProps = new Array<VariantPropType>(
+  "variant2",
+  "variant3",
+  "rmTeam"
+);
 
 export type PlasmicBreakinNewsCards__ArgsType = {};
 type ArgPropType = keyof PlasmicBreakinNewsCards__ArgsType;
@@ -84,6 +95,9 @@ export type PlasmicBreakinNewsCards__OverridesType = {
 };
 
 export interface DefaultBreakinNewsCardsProps {
+  variant2?: SingleBooleanChoiceArg<"variant2">;
+  variant3?: SingleBooleanChoiceArg<"variant3">;
+  rmTeam?: SingleBooleanChoiceArg<"rmTeam">;
   className?: string;
 }
 
@@ -118,6 +132,36 @@ function PlasmicBreakinNewsCards__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
+    () => [
+      {
+        path: "variant2",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.variant2
+      },
+      {
+        path: "variant3",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.variant3
+      },
+      {
+        path: "rmTeam",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.rmTeam
+      }
+    ],
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $refs
+  });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -132,7 +176,8 @@ function PlasmicBreakinNewsCards__RenderFunc(props: {
         projectcss.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
         plasmic_plasmic_rich_components_css.plasmic_tokens,
-        sty.root
+        sty.root,
+        { [sty.rootvariant2]: hasVariant($state, "variant2", "variant2") }
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox__okxih)}>
@@ -140,20 +185,49 @@ function PlasmicBreakinNewsCards__RenderFunc(props: {
           data-plasmic-name={"img"}
           data-plasmic-override={overrides.img}
           alt={""}
-          className={classNames(sty.img)}
+          className={classNames(sty.img, {
+            [sty.imgrmTeam]: hasVariant($state, "rmTeam", "rmTeam"),
+            [sty.imgvariant2]: hasVariant($state, "variant2", "variant2"),
+            [sty.imgvariant3]: hasVariant($state, "variant3", "variant3")
+          })}
           displayHeight={"215px"}
           displayMaxHeight={"none"}
           displayMaxWidth={"100%"}
           displayMinHeight={"0"}
           displayMinWidth={"0"}
-          displayWidth={"100%"}
+          displayWidth={
+            hasVariant($state, "variant3", "variant3") ? "auto" : "100%"
+          }
           loading={"lazy"}
-          src={{
-            src: "/plasmic/proliga_test_app/images/croswebp.webp",
-            fullWidth: 569,
-            fullHeight: 320,
-            aspectRatio: undefined
-          }}
+          src={
+            hasVariant($state, "rmTeam", "rmTeam")
+              ? {
+                  src: "/plasmic/proliga_test_app/images/rmTeamwebp.webp",
+                  fullWidth: 569,
+                  fullHeight: 320,
+                  aspectRatio: undefined
+                }
+              : hasVariant($state, "variant3", "variant3")
+              ? {
+                  src: "/plasmic/proliga_test_app/images/cimyAmelawebp.webp",
+                  fullWidth: 569,
+                  fullHeight: 320,
+                  aspectRatio: undefined
+                }
+              : hasVariant($state, "variant2", "variant2")
+              ? {
+                  src: "/plasmic/proliga_test_app/images/athleticoMadridwebp.webp",
+                  fullWidth: 569,
+                  fullHeight: 320,
+                  aspectRatio: undefined
+                }
+              : {
+                  src: "/plasmic/proliga_test_app/images/croswebp.webp",
+                  fullWidth: 569,
+                  fullHeight: 320,
+                  aspectRatio: undefined
+                }
+          }
         />
 
         <div className={classNames(projectcss.all, sty.freeBox___99Sn)}>
@@ -180,23 +254,65 @@ function PlasmicBreakinNewsCards__RenderFunc(props: {
           className={classNames(
             projectcss.all,
             projectcss.__wab_text,
-            sty.text__hGj4H
+            sty.text__hGj4H,
+            {
+              [sty.textrmTeam__hGj4H61ILr]: hasVariant(
+                $state,
+                "rmTeam",
+                "rmTeam"
+              ),
+              [sty.textvariant2__hGj4HRc2Iv]: hasVariant(
+                $state,
+                "variant2",
+                "variant2"
+              ),
+              [sty.textvariant3__hGj4HQn0Y5]: hasVariant(
+                $state,
+                "variant3",
+                "variant3"
+              )
+            }
           )}
         >
-          {
-            "Clasificaci\u00f3n general de los puntos Relevo: as\u00ed queda el ranking tras la \u00faltima jornada"
-          }
+          {hasVariant($state, "rmTeam", "rmTeam")
+            ? "Militao podr\u00eda sumar minutos ante el Mallorca: cu\u00e1nto pujar por \u00e9l y hasta qu\u00e9 precio puede subir en LALIGA FANTASY"
+            : hasVariant($state, "variant3", "variant3")
+            ? "Lesi\u00f3n de Chimy \u00c1vila: qu\u00e9 tiene y cu\u00e1ndo vuelve a jugar con el Betis"
+            : hasVariant($state, "variant2", "variant2")
+            ? "Por qu\u00e9 el consejo para la jornada 31 es no alinear a jugadores de Bar\u00e7a, Madrid o Atl\u00e9tico en LALIGA FANTASY"
+            : "Clasificaci\u00f3n general de los puntos Relevo: as\u00ed queda el ranking tras la \u00faltima jornada"}
         </div>
         <div
           className={classNames(
             projectcss.all,
             projectcss.__wab_text,
-            sty.text__e22Bw
+            sty.text__e22Bw,
+            {
+              [sty.textrmTeam__e22Bw61ILr]: hasVariant(
+                $state,
+                "rmTeam",
+                "rmTeam"
+              ),
+              [sty.textvariant2__e22BwRc2Iv]: hasVariant(
+                $state,
+                "variant2",
+                "variant2"
+              ),
+              [sty.textvariant3__e22BwQn0Y5]: hasVariant(
+                $state,
+                "variant3",
+                "variant3"
+              )
+            }
           )}
         >
-          {
-            "La lista se actualizar\u00e1 cada semana y mostrar\u00e1 la clasificaci\u00f3n general de los puntos Relevo...."
-          }
+          {hasVariant($state, "rmTeam", "rmTeam")
+            ? "El central brasile\u00f1o ya jug\u00f3 los compases finales del duelo frente al Athletic Club. .."
+            : hasVariant($state, "variant3", "variant3")
+            ? "El futbolista argentino, que se retir\u00f3 lesionado del Girona-Betis, sufre una lesi\u00f3n miotendinosa proximal del isquiotibial izquierdo...."
+            : hasVariant($state, "variant2", "variant2")
+            ? "Los equipos que disputaron competici\u00f3n europea podr\u00edan rotar en la nueva fecha de la competici\u00f3n, ya pensando en el partido de vuelta...."
+            : "La lista se actualizar\u00e1 cada semana y mostrar\u00e1 la clasificaci\u00f3n general de los puntos Relevo...."}
         </div>
       </div>
     </div>

@@ -64,6 +64,7 @@
   flex-direction: row;
   margin-top: -8px;
   min-width: 0;
+  --plsmc-rc-col-gap: 0px;
   padding: 0px 8px;
 }
 .columns > :global(.__wab_flex-container) {
@@ -84,9 +85,6 @@
   > picture
   > img {
   margin-left: 12px;
-}
-.columns {
-  --plsmc-rc-col-gap: 0px;
 }
 .columns > :global(.__wab_flex-container) > :nth-child(2n + 1) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);

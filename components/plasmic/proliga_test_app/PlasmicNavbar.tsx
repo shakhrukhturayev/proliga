@@ -319,6 +319,35 @@ function PlasmicNavbar__RenderFunc(props: {
                     role={"img"}
                   />
                 }
+                link={`/breaking-news`}
+                onClick={async event => {
+                  const $steps = {};
+
+                  $steps["goToBreakinNews"] = true
+                    ? (() => {
+                        const actionArgs = { destination: `/breaking-news` };
+                        return (({ destination }) => {
+                          if (
+                            typeof destination === "string" &&
+                            destination.startsWith("#")
+                          ) {
+                            document
+                              .getElementById(destination.substr(1))
+                              .scrollIntoView({ behavior: "smooth" });
+                          } else {
+                            __nextRouter?.push(destination);
+                          }
+                        })?.apply(null, [actionArgs]);
+                      })()
+                    : undefined;
+                  if (
+                    $steps["goToBreakinNews"] != null &&
+                    typeof $steps["goToBreakinNews"] === "object" &&
+                    typeof $steps["goToBreakinNews"].then === "function"
+                  ) {
+                    $steps["goToBreakinNews"] = await $steps["goToBreakinNews"];
+                  }
+                }}
                 startIcon={
                   <ChecksvgIcon
                     className={classNames(projectcss.all, sty.svg__nlcjf)}
@@ -326,6 +355,7 @@ function PlasmicNavbar__RenderFunc(props: {
                   />
                 }
                 submitsForm={true}
+                target={false}
               >
                 <div
                   className={classNames(

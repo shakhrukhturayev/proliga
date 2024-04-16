@@ -85,6 +85,7 @@ export const PlasmicBreakinNews__ArgProps = new Array<ArgPropType>();
 export type PlasmicBreakinNews__OverridesType = {
   root?: Flex__<"div">;
   navbar?: Flex__<typeof Navbar>;
+  freeBox?: Flex__<"div">;
   clubs?: Flex__<typeof Clubs>;
   text?: Flex__<"div">;
   footer?: Flex__<typeof Footer>;
@@ -156,12 +157,17 @@ function PlasmicBreakinNews__RenderFunc(props: {
             className={classNames("__wab_instance", sty.navbar)}
           />
 
-          <Clubs
-            data-plasmic-name={"clubs"}
-            data-plasmic-override={overrides.clubs}
-            className={classNames("__wab_instance", sty.clubs)}
-          />
-
+          <div
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            className={classNames(projectcss.all, sty.freeBox)}
+          >
+            <Clubs
+              data-plasmic-name={"clubs"}
+              data-plasmic-override={overrides.clubs}
+              className={classNames("__wab_instance", sty.clubs)}
+            />
+          </div>
           <div
             data-plasmic-name={"text"}
             data-plasmic-override={overrides.text}
@@ -188,6 +194,7 @@ function PlasmicBreakinNews__RenderFunc(props: {
                   "__wab_instance",
                   sty.breakinNewsCards__o9ZmE
                 )}
+                variant2={true}
               />
             </div>
             <div className={classNames(projectcss.all, sty.column__jTvod)}>
@@ -196,6 +203,7 @@ function PlasmicBreakinNews__RenderFunc(props: {
                   "__wab_instance",
                   sty.breakinNewsCards___6Z8Ek
                 )}
+                variant3={true}
               />
             </div>
           </div>
@@ -251,6 +259,17 @@ function PlasmicBreakinNews__RenderFunc(props: {
               />
             </div>
           </div>
+          <div className={classNames(projectcss.all, sty.columns__qfdZ9)}>
+            <div className={classNames(projectcss.all, sty.column__qSqwh)}>
+              <BreakinNewsCards
+                className={classNames(
+                  "__wab_instance",
+                  sty.breakinNewsCards__dRl1I
+                )}
+                rmTeam={true}
+              />
+            </div>
+          </div>
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -263,8 +282,9 @@ function PlasmicBreakinNews__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navbar", "clubs", "text", "footer"],
+  root: ["root", "navbar", "freeBox", "clubs", "text", "footer"],
   navbar: ["navbar"],
+  freeBox: ["freeBox", "clubs"],
   clubs: ["clubs"],
   text: ["text"],
   footer: ["footer"]
@@ -275,6 +295,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   navbar: typeof Navbar;
+  freeBox: "div";
   clubs: typeof Clubs;
   text: "div";
   footer: typeof Footer;
@@ -341,6 +362,7 @@ export const PlasmicBreakinNews = Object.assign(
   {
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
+    freeBox: makeNodeComponent("freeBox"),
     clubs: makeNodeComponent("clubs"),
     text: makeNodeComponent("text"),
     footer: makeNodeComponent("footer"),

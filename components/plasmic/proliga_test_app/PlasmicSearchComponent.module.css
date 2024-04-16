@@ -9,9 +9,6 @@
   padding-right: 0px;
 }
 .columns {
-  --plsmc-rc-col-gap: 0px;
-}
-.columns {
   display: flex;
   position: relative;
   width: 100%;
@@ -23,6 +20,7 @@
   flex-wrap: wrap;
   background: var(--token-iY-G3zIs-ZCD);
   min-width: 0;
+  --plsmc-rc-col-gap: 0px;
   padding: 8px;
 }
 .columns > :nth-child(2n + 1) {
