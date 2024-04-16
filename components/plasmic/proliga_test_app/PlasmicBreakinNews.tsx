@@ -214,6 +214,7 @@ function PlasmicBreakinNews__RenderFunc(props: {
                   "__wab_instance",
                   sty.breakinNewsCards__czWip
                 )}
+                variant2={true}
               />
             </div>
             <div className={classNames(projectcss.all, sty.column___1OmLp)}>
@@ -230,6 +231,7 @@ function PlasmicBreakinNews__RenderFunc(props: {
                   "__wab_instance",
                   sty.breakinNewsCards__yybOp
                 )}
+                rmTeam={true}
               />
             </div>
           </div>
@@ -240,6 +242,7 @@ function PlasmicBreakinNews__RenderFunc(props: {
                   "__wab_instance",
                   sty.breakinNewsCards__sozX
                 )}
+                variant3={true}
               />
             </div>
             <div className={classNames(projectcss.all, sty.column__grsJ4)}>
@@ -248,6 +251,7 @@ function PlasmicBreakinNews__RenderFunc(props: {
                   "__wab_instance",
                   sty.breakinNewsCards___9NuKo
                 )}
+                rmTeam={true}
               />
             </div>
             <div className={classNames(projectcss.all, sty.column__n3Mza)}>
@@ -256,6 +260,7 @@ function PlasmicBreakinNews__RenderFunc(props: {
                   "__wab_instance",
                   sty.breakinNewsCards__cPJgH
                 )}
+                variant2={true}
               />
             </div>
           </div>
