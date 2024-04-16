@@ -86,6 +86,7 @@ export const PlasmicAbsences__ArgProps = new Array<ArgPropType>();
 export type PlasmicAbsences__OverridesType = {
   root?: Flex__<"div">;
   navbar?: Flex__<typeof Navbar>;
+  freeBox?: Flex__<"div">;
   clubs?: Flex__<typeof Clubs>;
   text?: Flex__<"div">;
   columns?: Flex__<"div">;
@@ -158,12 +159,17 @@ function PlasmicAbsences__RenderFunc(props: {
             className={classNames("__wab_instance", sty.navbar)}
           />
 
-          <Clubs
-            data-plasmic-name={"clubs"}
-            data-plasmic-override={overrides.clubs}
-            className={classNames("__wab_instance", sty.clubs)}
-          />
-
+          <div
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            className={classNames(projectcss.all, sty.freeBox)}
+          >
+            <Clubs
+              data-plasmic-name={"clubs"}
+              data-plasmic-override={overrides.clubs}
+              className={classNames("__wab_instance", sty.clubs)}
+            />
+          </div>
           <div
             data-plasmic-name={"text"}
             data-plasmic-override={overrides.text}
@@ -335,8 +341,9 @@ function PlasmicAbsences__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navbar", "clubs", "text", "columns", "footer"],
+  root: ["root", "navbar", "freeBox", "clubs", "text", "columns", "footer"],
   navbar: ["navbar"],
+  freeBox: ["freeBox", "clubs"],
   clubs: ["clubs"],
   text: ["text"],
   columns: ["columns"],
@@ -348,6 +355,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   navbar: typeof Navbar;
+  freeBox: "div";
   clubs: typeof Clubs;
   text: "div";
   columns: "div";
@@ -415,6 +423,7 @@ export const PlasmicAbsences = Object.assign(
   {
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
+    freeBox: makeNodeComponent("freeBox"),
     clubs: makeNodeComponent("clubs"),
     text: makeNodeComponent("text"),
     columns: makeNodeComponent("columns"),
