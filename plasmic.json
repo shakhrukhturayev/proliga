@@ -1258,6 +1258,34 @@
           "cssFilePath": "plasmic/proliga_test_app/PlasmicMarketMember.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "tTrNEJYrxVlp",
+          "name": "Market",
+          "type": "managed",
+          "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
+          "renderModuleFilePath": "plasmic/proliga_test_app/PlasmicMarket.tsx",
+          "importSpec": {
+            "modulePath": "../pages/market.tsx"
+          },
+          "cssFilePath": "plasmic/proliga_test_app/PlasmicMarket.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/market"
+        },
+        {
+          "id": "SzuYj3CiWFZL",
+          "name": "IdealXl",
+          "type": "managed",
+          "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
+          "renderModuleFilePath": "plasmic/proliga_test_app/PlasmicIdealXl.tsx",
+          "importSpec": {
+            "modulePath": "../pages/ideal-xl.tsx"
+          },
+          "cssFilePath": "plasmic/proliga_test_app/PlasmicIdealXl.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/ideal-xl"
         }
       ],
       "icons": [

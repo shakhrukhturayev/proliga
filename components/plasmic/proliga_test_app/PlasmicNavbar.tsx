@@ -309,6 +309,7 @@ function PlasmicNavbar__RenderFunc(props: {
                 sty.link__oPQt
               )}
               component={Link}
+              href={`/breaking-news`}
               platform={"nextjs"}
             >
               <Button
@@ -375,6 +376,7 @@ function PlasmicNavbar__RenderFunc(props: {
                 sty.link__u0Re5
               )}
               component={Link}
+              href={`/market`}
               platform={"nextjs"}
             >
               <Button
@@ -385,6 +387,35 @@ function PlasmicNavbar__RenderFunc(props: {
                     role={"img"}
                   />
                 }
+                link={`/market`}
+                onClick={async event => {
+                  const $steps = {};
+
+                  $steps["goToMarket"] = true
+                    ? (() => {
+                        const actionArgs = { destination: `/market` };
+                        return (({ destination }) => {
+                          if (
+                            typeof destination === "string" &&
+                            destination.startsWith("#")
+                          ) {
+                            document
+                              .getElementById(destination.substr(1))
+                              .scrollIntoView({ behavior: "smooth" });
+                          } else {
+                            __nextRouter?.push(destination);
+                          }
+                        })?.apply(null, [actionArgs]);
+                      })()
+                    : undefined;
+                  if (
+                    $steps["goToMarket"] != null &&
+                    typeof $steps["goToMarket"] === "object" &&
+                    typeof $steps["goToMarket"].then === "function"
+                  ) {
+                    $steps["goToMarket"] = await $steps["goToMarket"];
+                  }
+                }}
                 startIcon={
                   <ChecksvgIcon
                     className={classNames(projectcss.all, sty.svg__aa16D)}
@@ -392,6 +423,7 @@ function PlasmicNavbar__RenderFunc(props: {
                   />
                 }
                 submitsForm={true}
+                target={true}
               >
                 <div
                   className={classNames(
