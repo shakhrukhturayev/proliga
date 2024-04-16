@@ -1286,6 +1286,46 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/ideal-xl"
+        },
+        {
+          "id": "JHModymCBI4k",
+          "name": "Absences",
+          "type": "managed",
+          "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
+          "renderModuleFilePath": "plasmic/proliga_test_app/PlasmicAbsences.tsx",
+          "importSpec": {
+            "modulePath": "../pages/absences.tsx"
+          },
+          "cssFilePath": "plasmic/proliga_test_app/PlasmicAbsences.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/absences"
+        },
+        {
+          "id": "nDtUOyPY4RVH",
+          "name": "InjuredClub",
+          "type": "managed",
+          "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
+          "renderModuleFilePath": "plasmic/proliga_test_app/PlasmicInjuredClub.tsx",
+          "importSpec": {
+            "modulePath": "InjuredClub.tsx"
+          },
+          "cssFilePath": "plasmic/proliga_test_app/PlasmicInjuredClub.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "WNvy9DWprfhO",
+          "name": "InjuredTeamMember",
+          "type": "managed",
+          "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
+          "renderModuleFilePath": "plasmic/proliga_test_app/PlasmicInjuredTeamMember.tsx",
+          "importSpec": {
+            "modulePath": "InjuredTeamMember.tsx"
+          },
+          "cssFilePath": "plasmic/proliga_test_app/PlasmicInjuredTeamMember.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1495,6 +1535,56 @@
           "id": "ZDCeKrQfeio7",
           "name": "Osasuna.png",
           "filePath": "../public/plasmic/proliga_test_app/images/osasunapng.png"
+        },
+        {
+          "id": "lSBPqsRCz6uS",
+          "name": "Alaves.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/alavespng.png"
+        },
+        {
+          "id": "ADPDzJyQzFXA",
+          "name": "free-circle-wavy-warning-3601587-3003157.webp",
+          "filePath": "../public/plasmic/proliga_test_app/images/freeCircleWavyWarning36015873003157Webp.webp"
+        },
+        {
+          "id": "nPhpR_rx5H81",
+          "name": "images.png 2",
+          "filePath": "../public/plasmic/proliga_test_app/images/imagespng2.png"
+        },
+        {
+          "id": "M9gibGRhxtxA",
+          "name": "freesvgorg59596.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/freesvgorg59596Png.png"
+        },
+        {
+          "id": "mg66Fa29ydR0",
+          "name": "warning-outline.svg",
+          "filePath": "../public/plasmic/proliga_test_app/images/warningOutlinesvg.svg"
+        },
+        {
+          "id": "rJOUTzsPA2Eg",
+          "name": "1200px-Warning.svg.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/_1200PxWarningsvgpng.png"
+        },
+        {
+          "id": "Dmnlv-Yg42yb",
+          "name": "images (1).png",
+          "filePath": "../public/plasmic/proliga_test_app/images/images1Png.png"
+        },
+        {
+          "id": "YNdRnjhV7F01",
+          "name": "hospital.svg",
+          "filePath": "../public/plasmic/proliga_test_app/images/hospitalsvg.svg"
+        },
+        {
+          "id": "VZeb0Rj7WbKu",
+          "name": "hospital (1)7777.svg",
+          "filePath": "../public/plasmic/proliga_test_app/images/hospital17777Svg.svg"
+        },
+        {
+          "id": "YnpM1FhZTDZN",
+          "name": "cross_medical_circle-512.webp",
+          "filePath": "../public/plasmic/proliga_test_app/images/crossMedicalCircle512Webp.webp"
         }
       ],
       "indirect": false,

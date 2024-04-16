@@ -489,6 +489,35 @@ function PlasmicNavbar__RenderFunc(props: {
                     role={"img"}
                   />
                 }
+                link={`/absences`}
+                onClick={async event => {
+                  const $steps = {};
+
+                  $steps["goToAbsences"] = true
+                    ? (() => {
+                        const actionArgs = { destination: `/absences` };
+                        return (({ destination }) => {
+                          if (
+                            typeof destination === "string" &&
+                            destination.startsWith("#")
+                          ) {
+                            document
+                              .getElementById(destination.substr(1))
+                              .scrollIntoView({ behavior: "smooth" });
+                          } else {
+                            __nextRouter?.push(destination);
+                          }
+                        })?.apply(null, [actionArgs]);
+                      })()
+                    : undefined;
+                  if (
+                    $steps["goToAbsences"] != null &&
+                    typeof $steps["goToAbsences"] === "object" &&
+                    typeof $steps["goToAbsences"].then === "function"
+                  ) {
+                    $steps["goToAbsences"] = await $steps["goToAbsences"];
+                  }
+                }}
                 startIcon={
                   <ChecksvgIcon
                     className={classNames(projectcss.all, sty.svg___1InUa)}
@@ -496,6 +525,7 @@ function PlasmicNavbar__RenderFunc(props: {
                   />
                 }
                 submitsForm={true}
+                target={true}
               >
                 <div
                   className={classNames(
