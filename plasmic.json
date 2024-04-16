@@ -1245,6 +1245,19 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/breakin-news"
+        },
+        {
+          "id": "FbNpDs8gKIO3",
+          "name": "MarketMember",
+          "type": "managed",
+          "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
+          "renderModuleFilePath": "plasmic/proliga_test_app/PlasmicMarketMember.tsx",
+          "importSpec": {
+            "modulePath": "MarketMember.tsx"
+          },
+          "cssFilePath": "plasmic/proliga_test_app/PlasmicMarketMember.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1434,6 +1447,26 @@
           "id": "zmWUMb3n1VE5",
           "name": "Rm team.webp",
           "filePath": "../public/plasmic/proliga_test_app/images/rmTeamwebp.webp"
+        },
+        {
+          "id": "cYRdkJ0unJP1",
+          "name": "Real-madrid.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/realMadridpng.png"
+        },
+        {
+          "id": "0YOnYRPzt-6K",
+          "name": "Cadiz.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/cadizpng.png"
+        },
+        {
+          "id": "_j7yrUVZHUbH",
+          "name": "FcBarcelona.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/fcBarcelonapng.png"
+        },
+        {
+          "id": "ZDCeKrQfeio7",
+          "name": "Osasuna.png",
+          "filePath": "../public/plasmic/proliga_test_app/images/osasunapng.png"
         }
       ],
       "indirect": false,

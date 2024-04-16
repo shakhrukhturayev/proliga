@@ -11,6 +11,8 @@
   --plasmic-token-footer-back: var(--token-deUOqHKwNHwK);
   --token-yTaDKUg1kC9a: #f8b034;
   --plasmic-token-member-back-yellow: var(--token-yTaDKUg1kC9a);
+  --token-YItrCCM8CARa: #ec7de2;
+  --plasmic-token-pink-def: var(--token-YItrCCM8CARa);
 }
 
 .plasmic_tokens {

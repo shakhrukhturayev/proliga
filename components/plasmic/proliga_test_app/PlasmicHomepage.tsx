@@ -68,6 +68,7 @@ import { CmsRowImage } from "@plasmicpkgs/plasmic-cms";
 import { CmsRowField } from "@plasmicpkgs/plasmic-cms";
 import MatchesCalendar from "../../MatchesCalendar"; // plasmic-import: FvqZ6jZ3Nmz6/component
 import SoccerPlaceMens from "../../SoccerPlaceMens"; // plasmic-import: 9JecvK77shao/component
+import MarketMember from "../../MarketMember"; // plasmic-import: FbNpDs8gKIO3/component
 import Footer from "../../Footer"; // plasmic-import: cx6aWNqCuwPL/component
 
 import { useScreenVariants as useScreenVariantsdXwyGmjSdG } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -d_XWYGmjSdG/globalVariant
@@ -744,6 +745,27 @@ function PlasmicHomepage__RenderFunc(props: {
                 data-plasmic-override={overrides.soccerPlaceMens}
                 className={classNames("__wab_instance", sty.soccerPlaceMens)}
               />
+
+              <MarketMember
+                className={classNames(
+                  "__wab_instance",
+                  sty.marketMember__zazYf
+                )}
+              />
+
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__z5Kpt
+                )}
+                component={Link}
+                href={"https://www.plasmic.app/"}
+                platform={"nextjs"}
+              >
+                {"go to team of the weak"}
+              </PlasmicLink__>
             </div>
             <div className={classNames(projectcss.all, sty.column__ewIvw)}>
               <div
@@ -806,6 +828,78 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 {"Market"}
               </div>
+              <MarketMember
+                className={classNames(
+                  "__wab_instance",
+                  sty.marketMember___8Tdh
+                )}
+              />
+
+              <MarketMember
+                borjaMayoral={true}
+                className={classNames(
+                  "__wab_instance",
+                  sty.marketMember__l80Cp
+                )}
+              />
+
+              <MarketMember
+                className={classNames(
+                  "__wab_instance",
+                  sty.marketMember___1VRwB
+                )}
+              />
+
+              <MarketMember
+                className={classNames(
+                  "__wab_instance",
+                  sty.marketMember__wfMyW
+                )}
+                mendez={true}
+              />
+
+              <MarketMember
+                className={classNames(
+                  "__wab_instance",
+                  sty.marketMember__m7EIo
+                )}
+              />
+
+              <MarketMember
+                borjaMayoral={true}
+                className={classNames(
+                  "__wab_instance",
+                  sty.marketMember___0Rsrv
+                )}
+              />
+
+              <MarketMember
+                className={classNames(
+                  "__wab_instance",
+                  sty.marketMember___5RZc
+                )}
+              />
+
+              <MarketMember
+                className={classNames(
+                  "__wab_instance",
+                  sty.marketMember__aZhNs
+                )}
+              />
+
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link___7PcwW
+                )}
+                component={Link}
+                href={"https://www.plasmic.app/"}
+                platform={"nextjs"}
+              >
+                {"go to transfer market"}
+              </PlasmicLink__>
             </div>
           </div>
           <Footer

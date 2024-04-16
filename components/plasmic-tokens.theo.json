@@ -31,6 +31,16 @@
       }
     },
     {
+      "name": "Pink-Def",
+      "type": "color",
+      "value": "#EC7DE2",
+      "category": "color",
+      "meta": {
+        "projectId": "tCfLmaaHRZLhqCMNBDT3fx",
+        "id": "YItrCCM8CARa"
+      }
+    },
+    {
       "name": "System: Bg Container",
       "type": "color",
       "value": "var(--antd-colorBgContainer)",

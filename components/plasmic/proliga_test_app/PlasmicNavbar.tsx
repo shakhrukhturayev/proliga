@@ -355,7 +355,7 @@ function PlasmicNavbar__RenderFunc(props: {
                   />
                 }
                 submitsForm={true}
-                target={false}
+                target={true}
               >
                 <div
                   className={classNames(

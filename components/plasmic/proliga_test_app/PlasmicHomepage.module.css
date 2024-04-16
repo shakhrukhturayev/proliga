@@ -942,6 +942,18 @@
   position: relative;
   flex-shrink: 0;
 }
+.marketMember__zazYf:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.link__z5Kpt {
+  position: relative;
+  color: var(--token-jgohepLVeKvh);
+  font-weight: 700;
+  margin-top: 10px;
+  padding: 14px 60px;
+  border: 1px solid var(--token-jgohepLVeKvh);
+}
 .column__ewIvw {
   display: flex;
   position: relative;
@@ -999,6 +1011,7 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
+  background: var(--token-deUOqHKwNHwK);
   min-width: 0;
   padding: 8px;
 }
@@ -1012,6 +1025,55 @@
   font-weight: 700;
   color: var(--token-jgohepLVeKvh);
   min-width: 0;
+}
+.marketMember___8Tdh:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.marketMember__l80Cp:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  margin-top: 10px;
+  width: 480px;
+  margin-right: 2px;
+}
+.marketMember___1VRwB:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+.marketMember__wfMyW:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+.marketMember__m7EIo:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+.marketMember___0Rsrv:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+.marketMember___5RZc:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+.marketMember__aZhNs:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+.link___7PcwW {
+  position: relative;
+  font-weight: 700;
+  color: var(--token-jgohepLVeKvh);
+  margin-top: 12px;
+  padding: 14px 60px;
+  border: 1px solid var(--token-jgohepLVeKvh);
 }
 .footer:global(.__wab_instance) {
   max-width: 100%;
